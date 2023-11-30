@@ -5,4 +5,4 @@ line from branch f2
 different line
 f1 completed
 line from main
-last line
+edit last line
