@@ -1,1 +1,2 @@
 This is first file edited in second branch
+different line
