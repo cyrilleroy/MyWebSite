@@ -1,4 +1,4 @@
-edit   line 1 add 1st line again
+edit   line 1 add 1st line    again
 add 1st line
 This is first file edited in second branch
 line from branch f2
