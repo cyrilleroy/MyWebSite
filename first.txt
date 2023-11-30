@@ -1,8 +1,8 @@
-edit   line 1 add 1st line   again again
+edit toto  with extra line 1 add 1st line    again
 add 1st line
 This is first file edited in second branch
 line from branch f2
 different line
 f1 completed
 line from main
-edit last line
+edit last line again
