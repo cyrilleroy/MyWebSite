@@ -1,3 +1,2 @@
 .files_to_ignore/*
-!.files_to_ignore/ignore2.txt
-
+!.files_to_ignore/keep.txt
