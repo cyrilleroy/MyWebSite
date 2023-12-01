@@ -1,0 +1,36 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Variables Demo Workflow
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+env:
+  DAY_OF_WEEK: Monday
+
+jobs:
+  example-job:
+    runs-on: ubuntu-latest
+    env:
+      Greeting: Hello 
+    steps:
+    - name: Print value of Variable
+      run: |
+        echo "Value of Greeting is: ${{ env.Greeting }}"
+        echo "Value of Greeting is: $Greeting"
+        echo "Value of Repo Variable is: ${{ vars.REPOVARIABLE1 }}"
+        echo "My Password is: ${{ secrets.MYPASSWORD }}"
+        
+    - name: "Say Hello, it's Monday"
+      if: ${{ env.DAY_OF_WEEK == 'Monday' }}
+      run: echo "${{ env.Greeting }} ${{ env.FirstName }}. Today is ${{ env.DAY_OF_WEEK }}!"
+      env:
+        FirstName: Sandeep
